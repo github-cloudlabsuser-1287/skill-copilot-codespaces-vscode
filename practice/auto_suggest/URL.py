@@ -2,32 +2,13 @@ import json
 import random
 from flask import Flask, request, jsonify
 
-# find the path of the data.json file
-# with open('data.json') as f:
-#     data = json.load(f)
-#     print(data)
-
-data = [
-     {
-         "name": "apple"
-    },
-     {
-         "name": "banana"
-     },
-     {
-         "name": "orange"
-     },
-     {
-         "name": "grapes"
-     }
- ]
-
-# read data.json from the auto_suggest folder
 
 
 
 
-with open('/data.json') as f:
+
+
+with open(r'C:\Users\Public\Documents\VS CODE Workspace\skill-copilot-codespaces-vscode\practice\auto_suggest\data.json') as f:
     data = json.load(f)
 
 app = Flask(__name__)
